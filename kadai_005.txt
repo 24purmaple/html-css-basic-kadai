@@ -1,0 +1,59 @@
+PS C:\Users\masak> cd C:\Users\masak\Desktop\lesson\git_challenge
+PS C:\Users\masak\Desktop\lesson\git_challenge> mkdir git_challege
+
+
+    ディレクトリ: C:\Users\masak\Desktop\lesson\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+d-----        2024/04/04     11:03                git_challege                                                                                    
+
+
+PS C:\Users\masak\Desktop\lesson\git_challenge> git init
+PS C:\Users\masak\Desktop\lesson\git_challenge> git add hello_world.txt
+PS C:\Users\masak\Desktop\lesson\git_challenge> git status
+On branch main
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.txt
+
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+
+PS C:\Users\masak\Desktop\lesson\git_challenge> git commmit -m "hello_world.txtを追加"
+The most similar command is
+        commit
+PS C:\Users\masak\Desktop\lesson\git_challenge> git commit -m "hello_world.txtを追加" 
+[main (root-commit) 7356084] hello_world.txt繧定ｿｽ蜉
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\masak\Desktop\lesson\git_challenge> git add hello_world.txt
+PS C:\Users\masak\Desktop\lesson\git_challenge> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+
+PS C:\Users\masak\Desktop\lesson\git_challenge> git commit -m "日本語訳の追記"
+[main 42ab421] 譌･譛ｬ隱櫁ｨｳ縺ｮ霑ｽ險
+ 1 file changed, 2 insertions(+)
+PS C:\Users\masak\Desktop\lesson\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\masak\Desktop\lesson\git_challenge> git diff C:\Users\masak\Desktop\lesson\git_challenge
+PS C:\Users\masak\Desktop\lesson\git_challenge> git log
+commit 42ab421bce8db61e7528d8b9089f33f74de55f4b (HEAD -> main)
+Author: 24purmaple <24purmaple@gmail.com>
+Date:   Thu Apr 4 11:16:13 2024 +0900
+
+    日本語訳の追記
+
+commit 7356084c57fe4d89e1fae13921ac36c62d25cb49
+Author: 24purmaple <24purmaple@gmail.com>
+Date:   Thu Apr 4 11:13:49 2024 +0900
+
+    hello_world.txtを追加
+PS C:\Users\masak\Desktop\lesson\git_challenge> git log --oneline
+42ab421 (HEAD -> main) 日本語訳の追記
+7356084 hello_world.txtを追加
+PS C:\Users\masak\Desktop\lesson\git_challenge> 
